@@ -1,0 +1,14 @@
+# DNS and HTTP Enumeration Requirements
+# Core dependencies for professional cybersecurity reconnaissance tools
+
+# DNS resolution
+dnspython>=2.1.0
+
+# HTTP requests and session management
+requests>=2.25.1
+urllib3>=1.26.0
+
+# Optional enhancements
+colorama>=0.4.4       # Cross-platform colored terminal output
+termcolor>=1.1.0      # Terminal color formatting
+tqdm>=4.62.0         # Progress bars (for future enhancements)
