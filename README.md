@@ -20,24 +20,28 @@ Quick Start
 Installation
 
 1. Clone the repository:
+```
 bash
-git clone https://github.com/yourusername/subdomain-enumeration-project.git
-cd subdomain-enumeration-project
-
+git clone https://github.com/3UN014/subdomain-enumeration.git
+cd subdomain-enumeration
+```
 
 2. Install dependencies:
+```
 bash
 pip install -r requirements.txt
-
+```
 
 3. Run the tools:
+```
 bash
 DNS Enumeration
 python dns_enumeration.py example.com -v -o results.json
-
+```
 Subdomain Discovery
+```
 python subdomain_enumeration.py example.com -t 50 -o subdomains.csv
-
+```
 Usage
 
 DNS Enumeration Tool
