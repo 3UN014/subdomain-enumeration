@@ -48,14 +48,17 @@ DNS Enumeration Tool
 
 bash
 Basic usage
+```
 python dns_enumeration.py target.com
-
+```
 Advanced usage with options
+```
 python dns_enumeration.py target.com -o dns_results.json -v
-
+```
 Help
+```
 python dns_enumeration.py --help
-
+```
 
 Options:
 - `-o, --output`: Output file (supports .json, .csv, .txt)
@@ -63,18 +66,19 @@ Options:
 
 Subdomain Enumeration Tool
 
-bash
 Basic usage
+```
 python subdomain_enumeration.py target.com
-
+```
 Advanced usage with custom settings
+```
 python subdomain_enumeration.py target.com \
     -w wordlists/subdomains.txt \
     -t 100 \
     --timeout 15 \
     -o results.csv \
     -v
-
+```
 
 Options:
 - `-w, --wordlist`: Wordlist file (default: wordlists/subdomains.txt)
