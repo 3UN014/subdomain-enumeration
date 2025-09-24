@@ -2,7 +2,7 @@
 """
 Subdomain Enumeration Tool - Enhanced Version
 Professional multi-threaded subdomain discovery for cybersecurity reconnaissance
-Author: Cybersecurity Student Project
+Author: 3UN014
 GitHub: https://github.com/3UN014/subdomain-enumeration
 """
 
