@@ -2,8 +2,8 @@
 """
 DNS Enumeration Tool - Enhanced Version
 Professional DNS record enumeration for cybersecurity reconnaissance
-Author: Cybersecurity Student Project
-GitHub: https://github.com/yourusername/subdomain-enumeration-project
+Author: 3UN014
+GitHub: https://github.com/3UN014/subdomain-enumeration
 """
 
 import dns.resolver
@@ -14,12 +14,12 @@ import sys
 from datetime import datetime
 
 def print_banner():
-    """Display tool banner"""
+    """Display tool banner"""  https://github.com/3UN014/subdomain-enumeration
     banner = """
 ╔══════════════════════════════════════════════╗
 ║            DNS Enumeration Tool              ║
 ║              Enhanced Version                ║
-║         github.com/yourusername/...          ║
+║                   3UN014                     ║
 ╚══════════════════════════════════════════════╝
     """
     print(banner)
@@ -114,7 +114,7 @@ def save_results(domain, results, output_file):
                 'timestamp': datetime.now().isoformat(),
                 'results': results,
                 'tool': 'DNS Enumeration Tool - Enhanced Version',
-                'repository': 'https://github.com/yourusername/subdomain-enumeration-project'
+                'repository': 'https://github.com/3UN014/subdomain-enumeration'
             }
             with open(output_file, 'w') as f:
                 json.dump(output_data, f, indent=2)
@@ -132,7 +132,7 @@ def save_results(domain, results, output_file):
             with open(output_file, 'w') as f:
                 f.write(f"DNS Enumeration Results for {domain}\n")
                 f.write(f"Tool: DNS Enumeration Tool - Enhanced Version\n")
-                f.write(f"Repository: https://github.com/yourusername/subdomain-enumeration-project\n")
+                f.write(f"Repository: https://github.com/3UN014/subdomain-enumeration\n")
                 f.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
                 f.write("=" * 50 + "\n\n")
                 
@@ -151,7 +151,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='DNS Enumeration Tool - Enhanced Version',
         epilog='Example: python %(prog)s example.com -o results.json -v\n'
-               'Repository: https://github.com/yourusername/subdomain-enumeration-project',
+               'Repository: https://github.com/3UN014/subdomain-enumeration',
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
@@ -171,7 +171,7 @@ def main():
             sys.exit(1)
             
         print(f"\n[+] DNS enumeration completed successfully!")
-        print(f"[*] For more tools visit: https://github.com/yourusername/subdomain-enumeration-project")
+        print(f"[*] For more tools visit: https://github.com/3UN014/")
         
     except KeyboardInterrupt:
         print("\n[!] Enumeration interrupted by user")
