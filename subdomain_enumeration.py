@@ -3,7 +3,7 @@
 Subdomain Enumeration Tool - Enhanced Version
 Professional multi-threaded subdomain discovery for cybersecurity reconnaissance
 Author: Cybersecurity Student Project
-GitHub: https://github.com/yourusername/subdomain-enumeration-project
+GitHub: https://github.com/3UN014/subdomain-enumeration
 """
 
 import requests
@@ -37,7 +37,7 @@ class SubdomainEnumerator:
         # Configure requests session
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'SubdomainEnum/2.0 (Educational Tool; +https://github.com/yourusername/subdomain-enumeration-project)'
+            'User-Agent': 'SubdomainEnum/2.0 (Educational Tool; +https://github.com/3UN014/subdomain-enumeration)'
         })
         
         # Statistics
@@ -54,7 +54,7 @@ class SubdomainEnumerator:
 ╔══════════════════════════════════════════════╗
 ║         Subdomain Enumeration Tool           ║
 ║              Enhanced Version                ║
-║         github.com/yourusername/...          ║
+║                   3UN014                     ║
 ╚══════════════════════════════════════════════╝
         """
         print(banner)
@@ -80,8 +80,7 @@ class SubdomainEnumerator:
             print(f"[!] Wordlist file '{self.wordlist_file}' not found!")
             print("[!] Please ensure the wordlist file exists in the correct path.")
             print("[*] You can download wordlists from:")
-            print("    - https://github.com/danielmiessler/SecLists")
-            print("    - https://github.com/yourusername/subdomain-enumeration-project/tree/main/wordlists")
+            print("    - https://github.com/3UN014/subdomain-enumeration/tree/main/wordlists")
             sys.exit(1)
             
         except Exception as e:
@@ -222,7 +221,7 @@ class SubdomainEnumerator:
                 status_str = " | ".join(status_parts)
                 print(f"  {result['subdomain']} [{status_str}] [{result['ip_address']}]")
         
-        print(f"\n[*] Repository: https://github.com/yourusername/subdomain-enumeration-project")
+        print(f"\n[*] Repository: https://github.com/3UN014/subdomain-enumeration")
     
     def save_results(self):
         """Save results to file"""
@@ -234,7 +233,7 @@ class SubdomainEnumerator:
                     'statistics': self.stats,
                     'discovered_subdomains': self.discovered_subdomains,
                     'tool': 'Subdomain Enumeration Tool - Enhanced Version',
-                    'repository': 'https://github.com/yourusername/subdomain-enumeration-project'
+                    'repository': 'https://github.com/3UN014/subdomain-enumeration'
                 }
                 with open(self.output_file, 'w') as f:
                     json.dump(output_data, f, indent=2, default=str)
@@ -251,7 +250,7 @@ class SubdomainEnumerator:
                 with open(self.output_file, 'w') as f:
                     f.write(f"Subdomain Enumeration Results for {self.domain}\n")
                     f.write(f"Tool: Subdomain Enumeration Tool - Enhanced Version\n")
-                    f.write(f"Repository: https://github.com/yourusername/subdomain-enumeration-project\n")
+                    f.write(f"Repository: https://github.com/3UN014/subdomain-enumeration\n")
                     f.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
                     f.write("=" * 50 + "\n\n")
                     
@@ -267,7 +266,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='Subdomain Enumeration Tool - Enhanced Version',
         epilog='Example: python %(prog)s example.com -w wordlists/subdomains.txt -t 100 -o results.json\n'
-               'Repository: https://github.com/yourusername/subdomain-enumeration-project',
+               'Repository: https://github.com/3UN014/subdomain-enumeration',
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
